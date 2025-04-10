@@ -179,7 +179,8 @@ section{
 .m-flip-card-back {
     color: black;
     background-color: #bbb;
-    transform: rotateY(180deg)
+    transform: rotateY(180deg);
+    z-index: 0;
 }
 
 .flip-card-front img { /* Corrected selector */
@@ -242,7 +243,8 @@ section{
 }
 
 .flip-card-back {
-    margin-top: 20px;
+    background-color: #bbb;
+    margin-top: 0px;
     color: Black;
     transform: rotateY(180deg)
 }
