@@ -19,7 +19,7 @@ function showSlides() {
 showSlides();
 
 // Select all mechanic flip cards
-document.querySelectorAll('.m-flip-card').forEach(card => {
+document.querySelectorAll('.flip-card, .m-flip-card').forEach(card => {
     // Add event listeners for click, touchstart, and touchend
     ['click', 'touchstart', 'touchend'].forEach(eventType => {
         card.addEventListener(eventType, () => {
