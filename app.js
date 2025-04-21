@@ -18,10 +18,10 @@ function showSlides() {
 }
 showSlides();
 
-// Select all flip cards
-document.querySelectorAll('.flip-card, .m-flip-card').forEach(card => {
-    // Add event listeners for both click and touchstart
-    ['click', 'touchstart'].forEach(eventType => {
+// Select all mechanic flip cards
+document.querySelectorAll('.m-flip-card').forEach(card => {
+    // Add event listeners for click, touchstart, and touchend
+    ['click', 'touchstart', 'touchend'].forEach(eventType => {
         card.addEventListener(eventType, () => {
             card.classList.toggle('flipped'); // Toggle the "flipped" class
         });
