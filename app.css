@@ -289,7 +289,8 @@ html, body {
     }
 }
 
-@media (max-width: 425px) {
+
+@media (max-width: 430px) {
     body {
         font-size: 14px;
     }
@@ -321,4 +322,5 @@ html, body {
         padding: 275px 0 50px; 
     }
 }
+
 
