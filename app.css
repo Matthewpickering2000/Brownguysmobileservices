@@ -118,7 +118,7 @@ section {
     color: white;
 }
 .home-container {
-    padding: 275px 0 50px; /* Reduce bottom padding to 50px */
+    padding: 275px 0 225px; /* Reduce bottom padding to 50px */
     max-width: 1200px;
     display: flex;
     flex-direction: column;
@@ -284,6 +284,9 @@ html, body {
         height: 175px; /* Adjust BG image size */
         width: 175px;
     }
+    .home-container {
+        padding: 275px 0 50px; 
+    }
 }
 
 @media (max-width: 425px) {
@@ -313,6 +316,9 @@ html, body {
     #BG {
         height: 175px; /* Adjust BG image size */
         width: 175px;
+    }
+    .home-container {
+        padding: 275px 0 50px; 
     }
 }
 
