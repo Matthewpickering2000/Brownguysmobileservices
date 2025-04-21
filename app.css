@@ -199,8 +199,11 @@ section {
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
-.flip-card:hover .flip-card-inner {
+/* .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
+} */
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg); /* Flip when the "flipped" class is added */
 }
 .flip-card-front, .flip-card-back {
     position: absolute;

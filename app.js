@@ -17,3 +17,9 @@ function showSlides() {
     setTimeout(showSlides, 1500);
 }
 showSlides();
+
+document.querySelectorAll('.flip-card, .m-flip-card').forEach(card => {
+    card.addEventListener('click', () => {
+        card.classList.toggle('flipped'); // Toggle the "flipped" class
+    });
+});
