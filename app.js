@@ -18,8 +18,12 @@ function showSlides() {
 }
 showSlides();
 
+// Select all flip cards
 document.querySelectorAll('.flip-card, .m-flip-card').forEach(card => {
-    card.addEventListener('click', () => {
-        card.classList.toggle('flipped'); // Toggle the "flipped" class
+    // Add event listeners for both click and touchstart
+    ['click', 'touchstart'].forEach(eventType => {
+        card.addEventListener(eventType, () => {
+            card.classList.toggle('flipped'); // Toggle the "flipped" class
+        });
     });
 });
